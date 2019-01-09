@@ -1,0 +1,2656 @@
+/*****GENERELLE STYLES****/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-darkgreen: #112f3b;
+    --color-midtgreen: rgba(43, 115, 121, 0.56);
+    --color-lightgreen: rgba(107, 186, 181, 0.18);
+
+    --color-black: #1a1a1a;
+    --color-darkgrey: #3a3c41;
+    --color-midtgrey: #6c7481;
+    --color-lightgrey: #a8aaaf;
+    --color-almostwhite: #e6e7e8;
+}
+
+
+
+/*
+border-bottom: 0.01rem solid var(--color-almostwhite);
+ */
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    max-width: 1280px;
+}
+
+h2 {
+    font-family: 'rift', sans-serif;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+   text-align: center;
+
+}
+
+h1 {
+    font-family: 'rift', sans-serif;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+   text-align: center;
+    font-size: 2rem;
+
+}
+
+p {
+
+font-family: 'myriad-pro', sans-serif;
+font-weight: 300;
+font-style: normal;
+    padding: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    font-family: 'myrad-pro', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--color-lightgrey);
+    background-color: var(--color-almostwhite);
+
+
+}
+
+#citat {
+    background-color: white;
+}
+
+/*****MENU*****/
+
+.sideheader{
+      display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+     position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+
+#menuknap {
+    font-size: 2rem;
+    font-family: arial;
+    padding-left: 22rem;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index: 10;
+}
+
+
+#menu img {
+  width: 4rem;
+    margin-right: 0.5rem;
+    margin-bottom: -0.4rem;
+
+}
+
+
+.hidden {
+    transform: translateX(-100%);
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform 1s;
+    padding: 3rem;
+    width: 27rem;
+    height: 45rem;
+    background-color: rgba(168, 170, 175, 0.97);
+    z-index: 9;
+    position: fixed;
+}
+
+#menu li a {
+    font-size: 1.5rem;
+    color: var(--color-drakgrey);
+    text-decoration: none;
+    line-height: 4rem;
+font-family: 'rift', sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+#menu li a:hover {
+    border-bottom: 0.1rem solid var(--color-almostwhite);
+    border-top: 0.1rem solid var(--color-almostwhite);
+}
+
+/****** SPLASH *********/
+#splash {
+    max-width: none;
+}
+
+
+#splash picture {
+    padding: 0.1px;
+}
+
+#splash #scroll img {
+ display: block;
+     margin-top: -3rem;
+    margin-left: 11rem;
+    height: 2rem;
+    width: 3rem;
+    top: 39.5rem;
+    left: 11rem;
+    z-index: 1;
+
+}
+
+/****EFFEKT****/
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+
+/****** CITAT *********/
+
+#citat {
+    height: 6rem;
+    margin-top: -0.28rem;
+    background-color: rgba(168, 170, 175, 0.67)
+}
+
+#citat #afsnit_top p {
+    text-align: center;
+font-family: myriad-pro, sans-serif;
+font-weight: 300;
+font-style: italic;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem
+
+}
+
+#citat #afsnit_bund p {
+font-family: myriad-pro, sans-serif;
+    font-size: 1rem;
+    padding-top: 0.2rem;
+    padding-left: 14rem;
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+
+}
+
+
+/**********TEMA INFORMATION*********/
+
+#tema_info .sectionwrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.1px;
+}
+
+#tema_info .kolonne {
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    border: 0.5rem;
+    border-bottom: 0.01rem solid var(--color-almostwhite);
+}
+
+
+/*****Grund WEB******/
+
+#tema_info .top1 {
+    height: 11rem;
+    width: 15rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+#tema_info .midt1 {
+    padding-top: 1rem;
+}
+
+
+/*****Grund IND******/
+
+#tema_info .top2 {
+    height: 11rem;
+    width: 13rem;
+  /*   position: absolute;
+    top: -6rem;
+    left: 6rem; */
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem
+}
+
+#tema_info .midt2 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem
+}
+
+
+/*****Grund ANIMA******/
+
+#tema_info .top3 {
+    height: 10rem;
+    width: 13rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+#tema_info .midt3 {
+    padding-top: 0.5rem;
+}
+
+
+/*****Grund UX******/
+
+#tema_info .top4 {
+    height: 10rem;
+    width: 11rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+#tema_info .midt4 {
+    padding-top: 2rem;
+}
+
+
+/****GENNERELLE****/
+
+#tema_info p {
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+
+/*******KNAP****/
+
+.knap_forside {
+    display: block;
+    font-family: 'rift', serif;
+    font-size: 1rem;
+    color: var(--color-midtgrey);
+    border: 1px solid var(--color-midtgrey);
+    border-radius: 0.1rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+
+}
+
+.knap_forside:hover {
+    background-color: var(--color-lightgreen);
+    text-decoration: underline var(--color-lightgrey);
+}
+
+.knap_forside a {
+    cursor: pointer;
+}
+
+
+#tema_info .bund {
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+
+/*******MASON********/ /******FRA CODE MY UI*********/
+
+#mason .top {
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+#mason .top img {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 6.5rem;
+    float: left;
+}
+
+#mason .top h1 {
+    font-size: 2rem;
+    padding: 0;
+    margin-left: 0.5rem;
+    margin-right: 8rem;
+    padding-top: 1rem;
+    float: right;
+    width: 6rem;
+}
+
+#mason .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding-bottom: 1rem;
+     border-bottom: 0.01rem solid var(--color-almostwhite);
+}
+
+#mason .row {
+    flex-grow: 1;
+    flex-basis: 200px;
+
+}
+
+.slide {
+  color: #ffffff;
+  font-family: 'rift', sans-serif;
+  font-size: 1rem;
+  max-width: 25rem;
+  min-width: 5rem;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  transform: translateZ(0);
+    margin-bottom: 0.5rem;
+}
+
+.slide *,
+.slide *:before,
+.slide *:after {
+  transition: all 0.45s ease;
+}
+
+.slide img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.slide:before,
+.slide:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: ''; /*Genereret indhold, fyld*/
+  background-color: var(--color-lightgreen);
+  opacity: 0.5;
+  transition: all 0.45s ease;
+}
+
+.slide:before {
+  transform: skew(30deg) translateX(-80%);
+    /*vinkel og form på grafik , ventre mod højre (lysgrøn)*/
+}
+
+.slide:after {
+  transform: skew(-30deg) translateX(-70%);
+    /*vinkel og form på grafik, højre mod venstre (lysgrøn)*/
+}
+
+.slide figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 1.5rem 40% 1.5rem 1rem;
+}
+
+.slide figcaption:before,
+.slide figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-midtgreen);
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.slide figcaption:before {
+  transform: skew(30deg) translateX(-100%);
+    /*Grafik til teksten, venstre til højre (mørkegrøn)*/
+}
+
+.slide figcaption:after {
+  transform: skew(-30deg) translateX(-80%);
+     /*Grafik til teksen, højre til venstre (mørkegrøn)*/
+}
+
+.slide h3,
+.slide p {
+  margin: 0;
+  opacity: 0;
+  /*opacity på 0, da den ved hover vises*/
+}
+
+.slide h3 {
+  font-family: 'rift', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.slide p {
+  font-size: 1rem;
+    padding: 1rem 1.5rem 1rem 0rem;
+}
+
+.slide a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.slide:hover h3,
+.slide.hover h3,
+.slide:hover p,
+.slide.hover p {
+  transform: translateY(0);
+  opacity: 0.9;
+  transition-delay: 0.2s;
+    /*teksen vises ved hover*/
+}
+
+.slide:hover:before,
+.slide.hover:before {
+  transform: skew(30deg) translateX(-20%);
+  transition-delay: 0.05s;
+    /*feltet flytter sig mod højre*/
+}
+
+.slide:hover:after,
+.slide.hover:after {
+  transform: skew(-30deg) translateX(-20%);
+    /*feltet flytter sig mod højre*/
+}
+
+.slide:hover figcaption:before,
+.slide.hover figcaption:before {
+  transform: skew(30deg) translateX(-40%);
+  transition-delay: 0.15s;
+    /*tekstfeltet flytter sig*/
+}
+
+.slide:hover figcaption:after,
+.slide.hover figcaption:after {
+  transform: skew(-30deg) translateX(-30%);
+  transition-delay: 0.1s;
+    /*tekstfeltet flytter sig*/
+}
+
+/******OM MIG FORSIDE****/
+
+
+#om_mig .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om_mig .kolonne {
+     flex-grow: 1;
+    flex-basis: 300px;
+}
+#om_mig .kolonne img {
+     padding: 1rem;
+}
+
+#om_mig h1 {
+    padding-bottom: 0;
+}
+
+#om_mig .top p {
+    padding: 0rem 1.5rem 0.5rem;
+}
+
+#om_mig .bund .knap_forside {
+    margin: 0 auto;
+}
+
+#om_mig .bund {
+    padding-bottom: 1rem;
+}
+
+
+
+/*******STILARTSITE******/
+/************ del 1 *************/
+
+#stilart .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#stilart .kolonne_bred {
+    flex-grow: 3;
+    flex-basis: 600px;
+}
+
+#stilart .kolonne_smal {
+    flex-grow: 2;
+    flex-basis: 400px;
+    padding: 1rem;
+    border: 0.5rem solid var(--color-lightgreen);
+}
+
+
+#stilart .kolonne_bred .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+
+#stilart .kolonne_bred {
+    margin-top: 4rem;
+}
+
+#stilart .kolonne_bred h1 {
+    font-size: 1.8rem;
+    padding-top: 1.9rem;
+    margin-right: 2rem;
+}
+
+#stilart .kolonne_bred h2 {
+    float: left;
+    margin-right: 20rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#stilart .kolonne_bred p {
+    padding: 0.5rem 1rem 1rem;
+    margin-right: 2rem;
+}
+
+#stilart .kolonne_smal {
+    margin: 1rem;
+}
+
+/* #stilart .kolonne_smal .bund {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+#stilart .kolonne_smal .bund img {
+    width: 45%;
+    margin: 0 auto;
+}
+
+#stilart .sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#stilart .kolonne1 {
+    margin-top: 1rem;
+    flex-grow: 2;
+    flex-basis: 400px;
+}
+
+#stilart .kolonne2 {
+    flex-grow: 3;
+    flex-basis: 500px;
+}
+/**************Farvepalette*************/
+
+.colors div {
+    width: 8rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+}
+
+.color1 {
+    background-color: #480040;
+}
+
+.color2 {
+    background-color: #fb3524;
+}
+
+.color3 {
+    background-color: #1ca18e;
+}
+
+.color4 {
+    background-color: #f2c62c;
+}
+
+.color5 {
+    background-color: #177f8e;
+}
+
+.color6 {
+    background-color: #fe5e28;
+}
+
+.color7 {
+    background-color: #a4e3f5;
+}
+
+.color8 {
+    background-color: #ff2182;
+}
+
+#stilart .kolonne1 {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 0.5rem solid var(--color-lightgreen);
+ padding-top: 1rem;
+    margin: 1rem;
+}
+
+#stilart .side_right img {
+    width: 90%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#stilart .kolonne2 h2 {
+    float: left;
+    margin-right: 14rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#stilart .kolonne2 p {
+    padding: 1rem;
+      padding: 0.5rem 1rem 1rem;
+    margin-right: 1rem;
+}
+
+#stilart .kolonne2 button {
+    margin-left: 16rem;
+    margin-bottom: 1rem;
+}
+
+/*******VIRKSOMHEDSVIDEO*******/
+#virksomhedsvideo .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+   float: left;
+       border-bottom: 0.01rem solid var(--color-almostwhite);
+
+}
+ #virksomhedsvideo .kolonne_bred {
+    flex-grow: 3;
+    flex-basis: 400px;
+}
+
+#virksomhedsvideo .kolonne_smal {
+    flex-grow: 2;
+    flex-basis: 200px;
+}
+
+#virksomhedsvideo video {
+    width: 50%;
+}
+
+#virksomhedsvideo .kolonne_bred .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+
+#virksomhedsvideo .kolonne_bred {
+    margin-top: 4rem;
+    width: 25rem;
+}
+
+#virksomhedsvideo .kolonne_bred h1 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    margin-right: 3rem;
+}
+
+#virksomhedsvideo .kolonne_bred h2 {
+    float: left;
+    margin-right: 20rem;
+    padding: 0rem 1.5rem 0.5rem;
+}
+
+#virksomhedsvideo .kolonne_bred p {
+    padding: 0.5rem 1.5rem 1rem;
+}
+
+#virksomhedsvideo .kolonne_smal {
+    display: none;
+    border: 0.5rem solid var(--color-lightgreen);
+    padding-right: 2rem;
+}
+
+
+#virksomhedsvideo .kolonne_bred .bund {
+    width: 45%;
+    margin: 1rem;
+    margin-left: 17rem;
+}
+
+/*********REDESIGN**************/
+
+#redesign .sectionwrapper1 {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+
+}
+
+ #redesign .kolonne_tekst {
+    flex-grow: 3;
+    flex-basis: 400px;
+    margin-top: 4rem;
+    width: 25rem;
+}
+
+
+#redesign .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 200px;
+    margin: 1rem;
+}
+
+#redesign .kolonne_tekst .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+
+
+#redesign .kolonne_tekst h1 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    margin-right: 13rem;
+}
+
+#redesign .kolonne_tekst h2 {
+    float: left;
+    margin-right: 11rem;
+    padding: 0rem 1.5rem 0.5rem;
+}
+
+#redesign .kolonne_tekst p {
+    padding: 0.5rem 1.5rem 1rem;
+}
+
+
+/******DEL 2*******/
+
+#redesign .sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+   float: left;
+    background-color: var(--color-almostwhite);
+
+}
+
+
+#redesign .sectionwrapper1 .kolonne_tekst {
+    margin-top: 2.5rem;
+}
+
+#redesign .sectionwrapper2 .kolonne_tekst {
+    margin-top: 2.5rem;
+}
+
+#redesign .sectionwrapper2 .kolonne_billede {
+   width: 100%;
+    height: 50%;
+display: flex;
+    margin: 1rem;
+}
+
+
+/*****DEL3 + 4*****/
+
+#redesign .sectionwrapper3 {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+  border-bottom: 0.01rem solid var(--color-almostwhite);
+}
+
+#redesign .sectionwrapper3 .kolonne_billede {
+display: block;
+
+}
+
+#redesign .sectionwrapper4 {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+    background-color: var(--color-almostwhite);
+
+}
+
+#redesign .sectionwrapper4 .kolonne_tekst {
+    flex-grow: 2;
+    flex-basis: 500px;
+}
+
+#redesign .sectionwrapper4 .kolonne_billede {
+    flex-grow: 3;
+    flex-basis: 200px;
+}
+
+
+
+
+#redesign .sectionwrapper3 .kolonne_tekst {
+    margin-top: 1rem;
+}
+
+#redesign .sectionwrapper3 .kolonne_tekst p {
+    float: left;
+    padding-top: 0;
+}
+
+
+
+#redesign .sectionwrapper4 .kolonne_tekst {
+    margin-top: 1rem;
+}
+
+#redesign .sectionwrapper4 .kolonne_tekst p {
+   float: left;
+    padding-top: 0;
+}
+
+#redesign .sectionwrapper5 .kolonne_tekst p {
+   float: left;
+    padding-top: 0;
+}
+
+#redesign .sectionwrapper5 .bund{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+#redesign .sectionwrapper5 .knap_forside{
+   margin: 0rem 0.2rem;
+}
+
+#redesign .sectionwrapper4 .kolonne_billede{
+   margin: 1rem;
+    float: left;
+}
+
+/*****DEL5****/
+
+#redesign .sectionwrapper3 .kolonne_billede {
+    margin: 1rem;
+}
+
+#redesign .sectionwrapper4 .kolonne_billede {
+    margin: 1rem;
+}
+
+#redesign .sectionwrapper5 .kolonne_billede {
+    margin: 1rem;
+}
+
+#redesign .sectionwrapper5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+   float: left;
+
+}
+
+#redesign .sectionwrapper5 .kolonne_billede {
+display: block;
+
+}
+
+ #redesign .sectionwrapper5 .kolonne_tekst {
+    flex-grow: 3;
+    flex-basis: 400px;
+     margin-top: 2rem;
+}
+
+#redesign .sectionwrapper5 .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 300px;
+}
+
+
+
+
+
+/*******animation******/
+/************ del 1 *************/
+
+#animation .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#animation .kolonne_bred {
+    flex-grow: 3;
+    flex-basis: 600px;
+     margin-top: 4rem;
+}
+
+#animation .kolonne_smal {
+    flex-grow: 2;
+    flex-basis: 400px;
+     margin: 1rem;
+}
+
+#animation .sectionwrapper .kolonne_smal {
+  background-color: var(--color-almostwhite);
+}
+
+
+#animation .kolonne_bred .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+
+
+#animation .kolonne_bred h1 {
+    font-size: 1.8rem;
+    padding-top: 1.9rem;
+    margin-right: 0.5rem;
+    margin-right: 2rem;
+}
+
+#animation .kolonne_bred h2 {
+    float: left;
+    margin-right: 13rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#animation .kolonne_bred p {
+    padding: 0.5rem 1rem 1rem;
+    float: left;
+}
+
+
+#animation .kolonne_smal .bund img {
+    width: 45%;
+    margin: 0.5rem;
+}
+
+#animation .kolonne_smal .top img {
+    width: 45%;
+    margin: 0.5rem;
+}
+
+#animation .sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#animation .kolonne1 {
+    flex-grow: 2;
+    flex-basis: 400px;
+    margin: 1rem;
+    background-color: var(--color-almostwhite);
+}
+
+#animation .sectionwrapper2 .kolonne_bred {
+    margin-top: 1rem;
+}
+
+
+#animation .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 200px;
+    margin: 1rem;
+}
+
+
+#animation .kolonne_tekst h1 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    margin-right: 13rem;
+}
+
+#animation .kolonne_tekst h2 {
+       float: left;
+    margin-right: 13rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#animation .kolonne_tekst p {
+    padding: 0.5rem 1.5rem 1rem;
+}
+
+
+#animation .sectionwrapper3 {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+
+
+}
+
+#animation .sectionwrapper3 .kolonne_bred {
+    margin-top: 1rem;
+}
+
+#animation .sectionwrapper3 .kolonne_smal {
+    padding-bottom: 2rem;
+    border-bottom: 0.01rem solid var(--color-almostwhite);
+}
+
+#animation .sectionwrapper3 .kolonne_bred h2 {
+   padding-top: 0;
+}
+
+#animation .sectionwrapper3 .kolonne_bred p {
+    float: left;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+#animation .sectionwrapper3 .bund{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 9rem;
+    margin-bottom: 2rem;
+}
+
+#animation .sectionwrapper3 .knap_forside{
+   margin: 0rem 0.4rem;
+}
+
+
+/**************Farvepalette*************/
+
+#animation .colors div {
+    width: 4rem;
+    height: 1.2rem;
+    margin-bottom: 0.9rem;
+    line-height: 0.2rem;
+    margin-left: 0rem;
+}
+
+#animation .color1 {
+    background-color: #FF2A3B;
+}
+
+#animation .color2 {
+    background-color: #800983;
+}
+
+#animation .color3 {
+    background-color: #1FEE6A;
+}
+
+#animation .color4 {
+    background-color: #2AC0FF;
+}
+
+#animation .color5 {
+    background-color: #DDFF3F;
+}
+
+#animation .color6 {
+    background-color: #2AEEFF;
+}
+
+#animation .color7 {
+    background-color: #FF7300;
+}
+
+#animation .color8 {
+    background-color: #835519;
+}
+
+#animation .kolonne1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#animation .side_right img {
+    width: 90%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#animation .kolonne2 h2 {
+    float: left;
+    margin-right: 20rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#animation .kolonne2 p {
+    padding: 1rem;
+      padding: 0.5rem 1rem 1rem;
+    margin-right: 1rem;
+}
+
+
+/* ******SEX OG SAMFUND***** */
+
+#sex_samfund .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 34rem;
+}
+
+#sex_samfund .kolonne_bred {
+    flex-grow: 3;
+    flex-basis: 400px;
+     margin-top: 3rem;
+}
+
+#sex_samfund .kolonne_smal {
+    flex-grow: 2;
+    flex-basis: 300px;
+     margin: 1rem;
+}
+
+#sex_samfund .sectionwrapper .kolonne_bred {
+    margin-top: 0;
+}
+
+
+#sex_samfund .kolonne_bred .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+
+
+#sex_samfund .kolonne_bred h1 {
+    font-size: 1.8rem;
+    padding-top: 1.9rem;
+    margin-right: 0.5rem;
+    margin-right: 8rem;
+}
+
+#sex_samfund .kolonne_bred h2 {
+    float: left;
+    margin-right: 13rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#sex_samfund .kolonne_bred p {
+    padding: 0.5rem 1rem 1rem;
+    float: left;
+}
+
+
+#sex_samfund .sectionwrapper2 .kolonne_smal img {
+    width: 45%;
+    height: 45%;
+    margin: 0.5rem;
+    vertical-align: top;
+}
+
+#sex_samfund .sectionwrapper2 .kolonne_smal {
+    width: 45%;
+    height: 50%;
+    margin: 0.5rem;
+    vertical-align: top;
+}
+
+
+#sex_samfund .sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#sex_samfund .kolonne1 {
+    flex-grow: 2;
+    flex-basis: 400px;
+    margin: 1rem;
+}
+
+#sex_samfund .sectionwrapper2 .kolonne_bred {
+    margin-top: 1rem;
+}
+
+
+#sex_samfund .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 200px;
+    margin: 1rem;
+}
+
+
+#sex_samfund .kolonne_tekst h2 {
+       float: left;
+    margin-right: 13rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+
+#sex_samfund .sectionwrapper3 .kolonne_tekst h2 {
+       float: left;
+    margin-right: 13rem;
+    padding: 0rem 1rem 0.5rem;
+}
+
+#sex_samfund .kolonne_tekst p {
+    padding: 0.5rem 1rem 1rem;
+}
+
+#sex_samfund .sectionwrapper3 .kolonne_tekst p {
+    padding: 0rem 1rem 1rem;
+}
+
+
+#sex_samfund .sectionwrapper3 {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+
+}
+
+#sex_samfund .sectionwrapper3 .kolonne_tekst {
+     flex-grow: 2;
+    flex-basis: 300px;
+     border-bottom: 0.1rem solid white;
+}
+
+#sex_samfund .sectionwrapper3 .kolonne_billede {
+    display: none;
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-color: var(--color-almostwhite);
+
+}
+
+
+#sex_samfund .sectionwrapper3 .bund{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+#sex_samfund .sectionwrapper3 .knap_forside{
+   margin: 0rem 0.4rem;
+}
+
+
+
+/******Om mig , html*****/
+
+#om_mig_html .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    border: 0.5rem solid var(--color-lightgreen);
+}
+
+#om_mig_html .sectionwrapper img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#om_mig_html .kolonne h1 {
+    padding-bottom: 0;
+    margin-right: 17.3rem;
+}
+
+#om_mig_html .kolonne h2 {
+    margin-top: 1rem;
+    padding-bottom: 0;
+    margin-right: 18.5rem;
+}
+
+
+#om_mig_html .kolonne {
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+
+}
+
+#om_mig_html p {
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+#kvali .sectionwrapper {
+    margin-top: 1rem;
+    background-color: var(--color-lightgreen);
+}
+
+#kvali .kolonne {
+     border-bottom: 0.01rem solid var(--color-almostwhite);
+}
+
+/*****kode******/
+
+#kvali .top1 {
+    height: 5rem;
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-left: 8rem;
+}
+
+#kvali .midt1 {
+    margin-top:  1rem;
+    padding-top: 1.5rem;
+}
+
+#kvali .midt1 h2, .midt2 h2, .midt3 h2, .midt4 h2, .midt5 h2 {
+margin-right: 1rem;
+}
+
+#kvali p {
+    margin: 1rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#kvali .midt1 h2{
+    margin-top: 0.5rem;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+
+#kvali .midt2 h2{
+    margin-top: 0.5rem;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+#kvali .midt3 h2{
+    margin-top: 0.5rem;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+#kvali .midt4 h2{
+    margin-top: 0rem;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+#kvali .midt5 h2{
+    margin-top: 1rem;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+
+
+
+/*****adobe******/
+
+#kvali  .top2 {
+    height: 5rem;
+    width: 9rem;
+    margin-left: 8.5rem;
+    margin-top: 1.5rem
+}
+
+#kvali  .midt2 {
+    padding-top: 0.5rem;
+}
+
+
+/*****ide******/
+
+#kvali  .top3 {
+    height: 7rem;
+    width: 7rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-left: 9rem;
+}
+
+#kvali  .midt3 {
+    padding-top: 0.5rem;
+}
+
+
+/*****gruppe******/
+
+#kvali .top4 {
+    height: 5rem;
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-left: 8.5rem;
+}
+
+#kvali .midt4 {
+    padding-top: 0.5rem;
+}
+
+/*****analyse******/
+
+#kvali  .top5 {
+    height: 5rem;
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-left: 9rem;
+}
+
+#kvali  .midt5 {
+    padding-top: 0.5rem;
+}
+
+
+
+/******APP******/
+#fronter .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+
+}
+
+ #fronter .kolonne_tekst {
+    flex-grow: 3;
+    flex-basis: 300px;
+    margin-top: 2rem;
+}
+
+
+#fronter .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 300px;
+    margin: 1rem;
+}
+
+#fronter .kolonne_tekst .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+
+
+#fronter .kolonne_tekst h1 {
+    font-size: 1.8rem;
+    padding-top: 2.5rem;
+    margin-right: 7.4rem;
+    padding-bottom: 0;
+}
+
+#fronter .kolonne_tekst h2 {
+    float: left;
+    margin-right: 5rem;
+    padding: 1rem 1.5rem 0.5rem;
+}
+
+#fronter .kolonne_tekst p {
+    padding: 0rem 1.5rem 1rem;
+    float: left;
+}
+
+#fronter .sectionwrapper .kolonne_billede {
+   width: 100%;
+display: flex;
+    margin: 1rem;
+}
+
+#fronter .sectionwrapper .kolonne_billede img {
+ padding: 0.5rem;
+}
+
+/****section 2****/
+
+
+#fronter .sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+   float: left;
+    border: 0.5rem solid var(--color-lightgreen);
+
+}
+
+
+#fronter .sectionwrapper2 .kolonne_tekst {
+    margin-top: 0rem;
+}
+
+
+/*****section 3*****/
+
+#fronter .sectionwrapper3 {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+  border-bottom: 0.01rem solid var(--color-almostwhite);
+}
+
+
+
+#fronter .sectionwrapper3 .kolonne_tekst {
+    margin-top: 1rem;
+}
+
+#fronter .sectionwrapper3 .kolonne_tekst p {
+    float: left;
+    padding-top: 0;
+}
+
+#fronter .sectionwrapper3 .kolonne_billede {
+    margin: 1rem;
+    padding-left: 1rem;
+    height: 80%;
+
+}
+
+#fronter .sectionwrapper3 .kolonne_billede img{
+    width: 100%;
+    height: 80%;
+}
+
+#fronter .sectionwrapper3 .bund {
+    margin-top: 5rem;
+    margin-left: 15rem;
+}
+
+
+/******WEB APP*****/
+#web_app .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+   float: left;
+    border-bottom: 0.01rem solid var(--color-almostwhite);
+
+}
+
+ #web_app .kolonne_tekst {
+    flex-grow: 3;
+    flex-basis: 400px;
+    margin-top: 2rem;
+}
+
+
+#web_app .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 200px;
+    margin: 1rem;
+    border: 0.5rem solid var(--color-lightgreen);
+}
+
+#web_app .kolonne_tekst .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+
+
+#web_app .kolonne_tekst h1 {
+    font-size: 1.8rem;
+    padding-top: 2.5rem;
+    margin-right: 10rem;
+}
+
+#web_app .kolonne_tekst h2 {
+    float: left;
+    margin-right: 5rem;
+    padding: 1rem 1.5rem 0.5rem;
+}
+
+#web_app .kolonne_tekst p {
+    padding: 0rem 1.5rem 1rem;
+    float: left;
+}
+
+#web_app .sectionwrapper .kolonne_billede {
+    margin: 1rem;
+}
+
+#web_app .sectionwrapper .kolonne_billede img {
+ padding: 0.5rem;
+}
+
+#web_app .bund {
+    margin-top: 30rem;
+    margin-left: 14.5rem;
+}
+
+/******native***/
+#native .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+
+}
+
+ #native .kolonne_tekst {
+    flex-grow: 3;
+    flex-basis: 400px;
+    margin-top: 2rem;
+}
+
+
+#native .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 200px;
+    margin: 1rem;
+}
+
+#native .kolonne_tekst .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+
+
+#native .kolonne_tekst h1 {
+    font-size: 1.8rem;
+    padding-top: 2.5rem;
+    margin-right: 13.2rem;
+    padding-bottom: 0;
+}
+
+#native .kolonne_tekst h2 {
+    float: left;
+    margin-right: 5rem;
+    padding: 1rem 1.5rem 0.5rem;
+}
+
+#native .kolonne_tekst p {
+    padding: 0rem 1.5rem 1rem;
+    float: left;
+}
+
+#native .sectionwrapper .kolonne_billede {
+    margin: 1rem;
+}
+
+#native .sectionwrapper .kolonne_billede img {
+ padding: 0.5rem;
+}
+
+/*****section 2****/
+
+
+#native .sectionwrapper2 {
+   display: flex;
+    flex-wrap: wrap;
+    float: left;
+    border: 0.5rem solid var(--color-lightgreen);
+}
+
+#native .sectionwrapper2 .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 200px;
+}
+
+#native .sectionwrapper2 .kolonne_tekst img {
+    float: right;
+    margin-right: 1rem;
+    width: 14%;
+    height: 100%;
+}
+
+#native .sectionwrapper2 .kolonne_tekst p {
+    padding-bottom: 0;
+}
+
+#native .sectionwrapper2 .bund .row {
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    float: right;
+    flex-wrap: nowrap;
+    display: flex;
+
+}
+
+#native .sectionwrapper2 .bund .row2 {
+margin: 0rem 0.5rem 0.5rem;
+    float: right;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#native .sectionwrapper2 .row .knap_forside {
+    margin: 0rem 0.5rem 0.5rem 0.4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+}
+
+#native .sectionwrapper2 .row2 .knap_forside {
+    margin: 0rem 0.5rem 0rem 0.1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/************** Desktop version *****************/
+
+@media only screen and (min-width: 1200px) {
+
+
+    .sectionwrapper, .sectionwrapper1, .sectionwrapper2, .sectionwrapper3, .sectionwrapper4, .sectionwrapper5, .sectionwrapper6 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /*******MENU******/
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu img {
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: -2.5rem;
+    }
+
+
+    #menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: fixed;
+        height: 5rem;
+        background: linear-gradient(180deg, #a8aaaf 0%, rgba(0, 0, 0, 0) 100%);
+        font-family: 'rift', sans-serif;
+        z-index: 100;
+    }
+
+    #menu li {
+        float: left;
+        height: 5rem;
+        line-height: 5rem;
+        z-index: 100;
+        margin-top: 1rem;
+    }
+
+    #menu li a {
+        display: block;
+        padding: 0rem 1rem;
+        color: black;
+        text-decoration: none;
+        z-index: 100;
+    }
+
+    #menu li a:hover {
+    border-bottom: 0.1rem solid var(--color-midtgreen);
+    border-top: 0.1rem solid var(--color-midtgreen);
+}
+
+    #splash #scroll img {
+        margin: 0 auto;
+        margin-top: -2.7rem;
+       /*  margin-left: 38rem; */
+    }
+
+    /****** CITAT *********/
+
+#citat {
+    height: 10rem;
+}
+
+#citat #afsnit_top p {
+    text-align: center;
+font-family: 'myriad-pro', sans-serif;
+font-weight: 300;
+font-style: italic;
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 3rem;
+
+}
+
+#citat #afsnit_bund p {
+font-family: 'myriad-pro', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 0.2rem;
+    padding-left: 46rem;
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+
+}
+
+    /*******TEMA INFO******/
+
+    #tema_info .sectionwrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.1px;
+        border-bottom: 0.01rem solid var(--color-almostwhite);
+    }
+
+    #tema_info .kolonne {
+        border-bottom: none;
+    }
+
+    #tema_info .top2 {
+    height: 10rem;
+    width: 12rem;
+  /*   position: absolute;
+    top: -6rem;
+    left: 6rem; */
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem
+}
+
+    #tema_info .midt2 {
+        margin-top: -3rem;
+    }
+
+    #tema_info .top3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #tema_info .midt3 {
+        padding-top: 0;
+    }
+
+    #tema_info .top4 {
+        height: 8rem;
+        width: 9rem;
+        margin-left: 3.5rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    #tema_info .midt4 {
+       padding-top: 0;
+        margin-top: -4rem;
+    }
+
+    #tema_info .midt1, .midt2, .midt3, .midt4, p {
+        line-height: 1.5rem;
+        /* text-align: justify; */
+    }
+
+    #tema_info .bund1, .bund2, .bund3, .bund4 {
+        padding-bottom: 4rem;
+    }
+
+    /*******MASON********/ /******FRA CODE MY UI*********/
+
+    #mason .sectionwrapper {
+        margin: 1rem 0.5rem 1rem 1rem;
+    }
+    #mason .top {
+        height: 5.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #mason .top img {
+        margin-left: 31rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #mason .top h1 {
+        margin-right: 37.5rem;
+        font-size: 3rem;
+    }
+
+
+    .slide img {
+  max-width: 100%;
+  vertical-align: top;
+        padding-right: 0.5rem;
+}
+
+
+.slide h3 {
+  font-family: 'rift', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.slide p {
+  font-size: 1rem;
+    padding: 0;
+}
+
+
+
+
+/******OM MIG FORSIDE****/
+
+
+#om_mig h1 {
+    padding-bottom: 0;
+    font-size: 3rem;
+
+}
+
+
+#om_mig .top p {
+    padding: 0rem 1.5rem 0.5rem;
+}
+
+    #om_mig .kolonne img {
+        width: 90%;
+        float: right;
+        margin: 1rem;
+    }
+
+#om_mig .bund .knap_forside {
+    margin: 0 auto;
+}
+
+#om_mig .bund {
+    padding-bottom: 1rem;
+}
+
+    /*******STILARTSITE******/
+/************ del 1 *************/
+
+    #stilart .sectionwrapper {
+        margin-top: 3rem;
+    }
+
+#stilart .kolonne_bred .top img {
+    height: 6rem;
+    width: 6rem;
+    float: left;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#stilart .kolonne_bred {
+    margin-top: 3rem;
+}
+
+#stilart .kolonne_bred h1 {
+    font-size: 2rem;
+    padding-top: 2.5rem;
+    margin-right: 18rem;
+}
+
+    #stilart .kolonne_bred h2 {
+    float: left;
+    margin-right: 39rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#stilart .kolonne_bred p {
+    padding: 0.7rem 1rem 1rem;
+}
+
+#stilart .kolonne_smal {
+    margin: 1rem;
+    margin-top: 6rem;
+}
+
+/* #stilart .kolonne_smal .bund {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+#stilart .kolonne_smal .bund img {
+    width: 45%;
+    margin: 0.5rem;
+}
+
+
+/**************Farvepalette*************/
+
+
+.colors div {
+    width: 9rem;
+    height: 3.45rem;
+    margin-bottom: 1rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+}
+
+.color1 {
+    background-color: #480040;
+}
+
+.color2 {
+    background-color: #fb3524;
+}
+
+.color3 {
+    background-color: #1ca18e;
+}
+
+.color4 {
+    background-color: #f2c62c;
+}
+
+.color5 {
+    background-color: #177f8e;
+}
+
+.color6 {
+    background-color: #fe5e28;
+}
+
+.color7 {
+    background-color: #a4e3f5;
+}
+
+.color8 {
+    background-color: #ff2182;
+}
+
+
+    #stilart .sectionwrapper2 {
+        margin-top: 2rem;
+    }
+
+#stilart .side_right img {
+    max-width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#stilart .kolonne2 h2 {
+    float: left;
+    margin-right: 33rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+
+#stilart .kolonne2 button {
+    margin-left: 34rem;
+    margin-top: 1rem;
+}
+
+/*******VIRKSOMHEDSVIDEO*******/
+
+
+    #virksomhedsvideo .sectionwrapper {
+        margin-top: 3rem;
+    }
+
+#virksomhedsvideo .kolonne_smal {
+        display: flex;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    }
+
+    #virksomhedsvideo .kolonne_smal video {
+        width: 100%;
+        height: 70%;
+        vertical-align: top;
+        padding-top:1rem;
+        margin: 1rem;
+        margin-top: 1rem;
+    }
+
+#virksomhedsvideo .kolonne_bred .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+
+#virksomhedsvideo .kolonne_bred {
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+#virksomhedsvideo .kolonne_bred h1 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    margin-right: 26rem;
+}
+
+#virksomhedsvideo .kolonne_bred h2 {
+    float: left;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#virksomhedsvideo .kolonne_bred p {
+    padding: 0.5rem 1rem 1rem;
+    margin-right: 1.7rem;
+    float: left;
+}
+
+
+
+#virksomhedsvideo .kolonne_bred .bund {
+    margin: 1rem;
+    margin-left: 17rem;
+    float: right;
+}
+
+    #virksomhedsvideo button {
+        margin-left: 14rem;
+    }
+
+    /*********REDESIGN**************/
+
+#redesign .sectionwrapper1 {
+    display: flex;
+    flex-wrap: wrap;
+   float: left;
+
+}
+
+    #redesign .kolonne_bred .top img {
+    height: 5rem;
+    width: 5rem;
+    float: left;
+    margin-left: 0.6rem;
+}
+
+    #redesign .kolonne_tekst h1 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    margin-right: 33rem;
+}
+
+    #redesign .sectionwrapper1 .kolonne_tekst p {
+    padding: 0rem 3rem 1rem 1.5rem;
+        float: left;
+}
+
+
+#redesign .kolonne_billede {
+    flex-grow: 2;
+    flex-basis: 300px;
+    display: flex;
+    margin-top: 3rem;
+}
+
+    #redesign .kolonne_billede .row {
+        margin-right: 1rem;
+    }
+
+
+/******DEL 2*******/
+
+#redesign .sectionwrapper2 .kolonne_tekst p {
+    float: left;
+    padding-top: 0;
+    }
+
+    #redesign .sectionwrapper2 .kolonne_billede {
+        margin-top: 3.5rem;
+    }
+
+/*****DEL3 + 4*****/
+
+    #redesign .sectionwrapper3 {
+        margin-top: 2rem;
+    }
+
+    #redesign .sectionwrapper3 .kolonne_billede {
+        margin-top: 2rem;
+    }
+
+    #redesign .sectionwrapper3 .kolonne_billede img {
+        float: right;
+    }
+
+    #redesign .sectionwrapper4 {
+        margin-top: 2rem;
+    }
+
+    #redesign .sectionwrapper4 .kolonne_billede {
+        display: block;
+        margin-left: 4rem;
+    }
+
+    #redesign .sectionwrapper5 .bund {
+       margin-left: 18rem;
+    }
+
+    #redesign .sectionwrapper5 .knap_forside {
+       margin: 0.5rem 1rem 0rem 0.5rem;
+    }
+
+    #redesign .sectionwrapper5 .kolonne_billede {
+        margin-top: 2rem;
+    }
+
+    /*******animation******/
+/************ del 1 *************/
+
+#animation .sectionwrapper {
+   margin-top: 4rem;
+}
+
+#animation .kolonne_bred h1 {
+    font-size: 1.8rem;
+    padding-top: 1.9rem;
+    margin-right: 0.5rem;
+    margin-right: 22rem;
+}
+
+
+#animation .kolonne_smal .bund img {
+    width: 30%;
+    margin: 0.5rem;
+    margin: 1rem;
+    margin-left: 3.5rem;
+}
+
+#animation .kolonne_smal .top img {
+    width: 39%;
+    margin: 0.5rem;
+    margin: 1rem;
+    padding-left: 2rem;
+}
+
+    #animation .sectionwrapper3 {
+         border-bottom: 0.01rem solid var(--color-almostwhite);
+    }
+
+
+#animation .sectionwrapper3 .kolonne_smal {
+    padding-bottom: 2rem;
+    border-bottom: none;
+
+}
+
+
+
+#animation .sectionwrapper3 .bund{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 28rem;
+    margin-bottom: 2rem;
+}
+
+#animation .sectionwrapper3 .knap_forside{
+   margin: 0rem 0.4rem;
+}
+
+
+/**************Farvepalette*************/
+
+#animation .colors div {
+    width: 5rem;
+    height: 2rem;
+    margin-bottom: 0.9rem;
+    line-height: 0.2rem;
+    margin-left: 0rem;
+}
+
+#animation .color1 {
+    background-color: #FF2A3B;
+}
+
+#animation .color2 {
+    background-color: #800983;
+}
+
+#animation .color3 {
+    background-color: #1FEE6A;
+}
+
+#animation .color4 {
+    background-color: #2AC0FF;
+}
+
+#animation .color5 {
+    background-color: #DDFF3F;
+}
+
+#animation .color6 {
+    background-color: #2AEEFF;
+}
+
+#animation .color7 {
+    background-color: #FF7300;
+}
+
+#animation .color8 {
+    background-color: #835519;
+}
+
+#animation .kolonne1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#animation .side_right img {
+    width: 90%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#animation .kolonne2 h2 {
+    float: left;
+    margin-right: 20rem;
+    padding: 1rem 1rem 0.5rem;
+}
+
+#animation .kolonne2 p {
+    padding: 1rem;
+      padding: 0.5rem 1rem 1rem;
+    margin-right: 1rem;
+}
+
+
+/* ******SEX OG SAMFUND***** */
+
+#sex_samfund .sectionwrapper {
+    margin-top: 24rem;
+}
+
+
+#sex_samfund .kolonne_smal {
+    flex-grow: 2;
+    flex-basis: 400px;
+     margin: 1rem;
+}
+
+#sex_samfund .sectionwrapper .kolonne_bred {
+    margin-top: 0;
+}
+
+    #sex_samfund .sectionwrapper3 .kolonne_tekst {
+    border: none;
+}
+
+
+#sex_samfund .kolonne_bred h1 {
+    font-size: 1.8rem;
+    padding-top: 1.9rem;
+    margin-right: 24rem;
+}
+
+#sex_samfund .sectionwrapper2 .kolonne_smal img {
+    width: 30%;
+    }
+
+
+#sex_samfund .sectionwrapper2 .kolonne_smal {
+    padding-left: 8rem;
+}
+
+
+#sex_samfund .sectionwrapper2 .kolonne_bred {
+    margin-top: 1rem;
+}
+
+    #sex_samfund .sectionwrapper3 {
+        border-bottom: 0.1rem solid white;
+    }
+
+#sex_samfund .sectionwrapper3 .kolonne_tekst p {
+float: left;
+}
+
+
+#sex_samfund .sectionwrapper3 .kolonne_billede img {
+    width: 30%;
+    height: 100%;
+    margin-left: 4rem;
+}
+
+#sex_samfund .sectionwrapper3 .kolonne_billede {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+
+#sex_samfund .sectionwrapper3 .bund{
+    margin-top: 10rem;
+    margin-left: 30rem;
+}
+
+#sex_samfund .sectionwrapper3 .knap_forside{
+   margin: 0rem 0.4rem;
+}
+
+    /******Om mig , html*****/
+
+#om_mig_html .sectionwrapper {
+    margin-top: 7rem;
+    }
+
+    #om_mig_html .kolonne {
+         border-bottom: none;
+
+}
+
+#om_mig_html .kolonne h1 {
+    padding-bottom: 0;
+    margin-right: 31.3rem;
+}
+
+#om_mig_html p {
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+}
+
+    #kvali .sectionwrapper {
+        margin-top: 1rem;
+        border: none;
+        margin-bottom: 1rem;
+    }
+
+/*****kode******/
+
+#kvali .top1 {
+    height: 5rem;
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+}
+
+#kvali .midt1 {
+    padding-top: 0.5rem;
+}
+
+
+/*****adobe******/
+
+#kvali  .top2 {
+    height: 5rem;
+    width: 9rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+#kvali  .midt2 {
+    padding-top: 0.3rem;
+}
+
+
+/*****ide******/
+
+#kvali  .top3 {
+    height: 7rem;
+    width: 7rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-left: 4.5rem;
+}
+
+#kvali  .midt3 {
+    padding-top: 0.5rem;
+}
+
+
+/*****gruppe******/
+
+#kvali .top4 {
+    height: 5rem;
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    margin-left: 4rem;
+}
+
+#kvali  .midt4 {
+margin-top: 1rem;
+}
+
+/*****analyse******/
+
+#kvali  .top5 {
+    height: 5rem;
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+}
+
+#kvali  .midt5 {
+    padding-top: 1.1rem;
+}
+
+    /******Fronter****/
+
+    #fronter .sectionwrapper {
+        margin-top: 4rem;
+    }
+
+    #fronter .sectionwrapper .kolonne_tekst h1 {
+        margin-right: 24.3rem;
+    }
+    #fronter .sectionwrapper .kolonne_billede {
+        height: 50%;
+        width: 50%;
+        margin-top: 4.5rem;
+    }
+
+    #fronter .sectionwrapper .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #fronter .sectionwrapper .row img {
+        width: 50%;
+        height: 50%
+    }
+
+    #fronter .sectionwrapper3 .kolonne_billede {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    #fronter .sectionwrapper3 .bund .knap_forside {
+        margin-top: 25rem;
+        margin-left: 30rem;
+    }
+
+    /****WEB APP*****/
+
+    #web_app .sectionwrapper {
+        margin-top: 1rem;
+    }
+
+    #web_app .sectionwrapper .kolonne_tekst h1 {
+        margin-right: 33rem;
+    }
+
+    #web_app .sectionwrapper .kolonne_billede {
+        margin-top: 4rem;
+    }
+
+    #web_app .bund {
+        margin-left: 36.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /*****Native app***/
+
+    #native .sectionwrapper {
+        margin-top: 1rem;
+    }
+
+    #native .sectionwrapper .kolonne_tekst h1 {
+        margin-right: 36.3rem;
+    }
+
+    #native .sectionwrapper .kolonne_billede {
+        margin-top: 5rem;
+    }
+
+    #native .sectionwrapper2 .kolonne_billede {
+        margin-top: 4rem;
+    }
+
+    #native .sectionwrapper2 .kolonne_tekst img {
+        width: 9%;
+        margin-top: 1rem;
+    }
+
+    #native .sectionwrapper2 .bund {
+     margin-left: 33rem;
+        margin-bottom: 2rem;
+        margin-top: -8rem;
+    }
+
+    #native .sectionwrapper2 .bund .row {
+     margin:0;
+    }
+
+    #native .sectionwrapper2 .bund .row2 {
+     margin:0;
+    }
+
+
+    }
+
